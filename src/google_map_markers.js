@@ -279,8 +279,10 @@ export default class GoogleMapMarkers extends Component {
           : this.props.geoService.fromLatLngToCenterPixel(latLng);
 
         const stylePtPos = {
-          left: pt.x,
-          top: pt.y,
+          // left: pt.x,
+          // top: pt.y,
+          transform: `translate(${pt.x}px,${pt.y}px)`,
+          willChange: 'transform'
         };
 
         // If the component has a southeast corner defined (either as a LatLng, or a separate
