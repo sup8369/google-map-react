@@ -16,11 +16,6 @@ const mainStyle = {
 };
 
 const style = {
-  width: 0,
-  height: 0,
-  left: 0,
-  top: 0,
-  backgroundColor: 'transparent',
   position: 'absolute',
 };
 
@@ -282,7 +277,7 @@ export default class GoogleMapMarkers extends Component {
           // left: pt.x,
           // top: pt.y,
           transform: `translate(${pt.x}px,${pt.y}px)`,
-          willChange: 'transform'
+          willChange: 'transform',
         };
 
         // If the component has a southeast corner defined (either as a LatLng, or a separate
